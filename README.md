@@ -51,11 +51,11 @@ Allow the songs to be sorted when a user clicks on the header for the correspond
 
 ### Write Some Tests
 
-The engine is up to you, but take a look at [Jest](https://jestjs.io/), as this is our primary test runner.
+The engine is up to you, but take a look at [Jest](https://jestjs.io/), as this is our primary test runner. ✅
 
 ### AWS Serverless
 
-Instead of using Express for the API, serve the same content with an AWS serverless API using the [Serverless Framework](https://serverless.com).
+Instead of using Express for the API, serve the same content with an AWS serverless API using the [Serverless Framework](https://serverless.com). ✅
 
 ### GraphQL
 
