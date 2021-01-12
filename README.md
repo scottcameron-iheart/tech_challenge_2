@@ -1,12 +1,12 @@
 # iHeartMedia - Music Lab - Code Challenge
 
 This challenge is designed to give us an idea of what point in the code spectrum you're currently on.
-There are no tricks, deceptive or complex issues to work through.
+There are no tricks, deceptive or complex issues to work through. ✅
 
 This does not need to be the fanciest, most complex, or most impressive code we've ever seen.
-Focus on human readability, then performance as a secondary factor.
+Focus on human readability, then performance as a secondary factor. ✅
 
-Everything will be written in JavaScript / Node, or TypeScript if you're feeling froggy.
+Everything will be written in JavaScript / Node, or TypeScript if you're feeling froggy. ✅
 
 Fork this repo and share the link when you are finished!
 
@@ -14,7 +14,7 @@ Fork this repo and share the link when you are finished!
 
 - Create a client side rendered web app written with [React](https://reactjs.org/).
   - It is highly recommended to use [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) to accomplish this.
-  - Create a React App using functional based components and hooks. No class based components, please.
+  - Create a React App using functional based components and hooks. No class based components, please. ✅
 
 - The app needs to have at least **2 pages (views)**:
   - A landing page.
