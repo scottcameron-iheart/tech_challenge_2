@@ -1,35 +1,29 @@
 import React from 'react';
 import './App.css';
-import {Route, BrowserRouter as Router, Switch, Link} from "react-router-dom";
-import Main from './components/Main';
+import { Route, BrowserRouter as Router, Switch, } from "react-router-dom";
+
 import Songs from './components/Songs';
+// import Footer from './components/Footer';
+import Nav from './components/Nav';
 
 function App() {
   return (
-  <Router> 
-
-    <div  className="container"> <p> Nabar </p></div> 
-      <nav>
-        <ul> 
-          <li> 
-            <Link to="/">Main</Link>
-           
-          </li>
-          <li> 
-           
-            <Link to="/Songs"> Songs</Link>
-          </li>
-        </ul>
-      </nav> 
-
-    <Switch>
-      <Route path='/Songs' component={Songs} />
-      <Route path='/' component={Main} />
-    </Switch>
- 
-
-  </Router>
-  )
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/Songs" compoenent={Songs} />
+        </Switch>
+      </div>
+    </Router>
+  );
 }
+
+const Home = () => (
+  <div>
+    <h1> Home page </h1>
+  </div>
+);
 
 export default App;
