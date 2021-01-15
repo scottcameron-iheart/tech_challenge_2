@@ -1,21 +1,18 @@
-var { graphql, buildSchema } = require('graphql');
+const express = require('express');
+const { alignPropType } = require('react-bootstrap/esm/DropdownMenu');
 
-// Constructs a schema, using Graphql schema language
-var schema = buildSchema(`
-    type Query {
-        hello: String
-    }
-`);
+const app = express();
 
+app.get('/api/customers' , (req, res) => {
+    const customers = [
+        { id: 1, firstname: 'john', lastname: 'doe'},
+        { id: 2, firstname: 'chris', lastname: 'doe'},
+        { id: 3, firstname: 'john', lastname: 'chris'},
+    ];
 
-// The root provides a resolver function for each API endpoint
-var root = {
-    hello: () => {
-        return 'hello world!';
-    },
-};
-
-// Run the GraphQL query '{hello}' and prin out the response
-graphql(schema, '{hello}' , root).then((response) => {
-    console.log(response);
+    res.json(customers)
 });
+
+const port= 5000;
+
+app.listen(port, () => console.log('server started on port ${port}'));
