@@ -13,12 +13,12 @@ function Nav() {
         <nav>
             <img src={logo} alt="logo"/>
             <ul className="nav-links"> 
-            <Link style={navStyle} to="/">
-                <li> Home</li>
-            </Link>
-            <Link style={navStyle} to="Songs"> 
-                <li> Songs</li>
-            </Link>
+                <Link style={navStyle} to="/">
+                    <li> Home</li>
+                </Link>
+                <Link style={navStyle} to="/Songs"> 
+                    <li> Songs</li>
+                </Link>
             </ul>
         </nav>
     );

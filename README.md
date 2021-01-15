@@ -9,7 +9,7 @@ Focus on human readability, then performance as a secondary factor. ✅
 
 Everything will be written in JavaScript / Node, or TypeScript if you're feeling froggy. ✅
 
-Fork this repo ✅ and share the link when you are finished! 
+Fork this repo ✅ and share the link when you are finished! ✅
 
 ## UI Checklist
 
@@ -20,32 +20,32 @@ Fork this repo ✅ and share the link when you are finished!
 
 - The app needs to have at least **2 pages (views)**: ✅
   - A landing page.
-  - A page renders a table displaying a list songs coming from the API.
+  - A page renders a table displaying a list songs coming from the API.✅
     - On mount of the this page, make a request to your API, fetching the songs and display the results in a table.
     - Feel free to use whatever attributes you'd like (artist, song name, label, etc.)
   - Use React Router to allow the user to change the page they are viewing.
 
-- Style is not important, meaning you won't be evaluated on looks or design. If you'd like to make it look nice, by all means.
+- Style is not important, meaning you won't be evaluated on looks or design. If you'd like to make it look nice, by all means.✅
 
-- It **does not** need to be mobile responsive.
+- It **does not** need to be mobile responsive.✅
 
 ## API Notes
 
 - Create a simple REST API that will serve the content needed for the client to render it.
   - The most direct approach would be to make an [Express](https://expressjs.com) API, but if you're familiar with a different framework, that's okay.
 
-- Authentication is not necessary.
+- Authentication is not necessary.✅
 
 - In the `data/` folder, create a file called `songs.json`.
   - When someone makes a `get` request to `/songs`, send back the contents of `songs.json`.
 
 - If you're unfamiliar with Express, or REST APIs, you'll need to setup a route handler listening for get requests for the `/songs` path.
 
-- You do not need to deploy or host this anywhere.
+- You do not need to deploy or host this anywhere.✅
 
 ## Bonus
 
-Big bonus points for any of these, monumental points for 2, unfathomable points for all.
+Big bonus points for any of these, monumental points for 2, unfathomable points for all.✅
 
 ### Make UI Columns Sortable
 

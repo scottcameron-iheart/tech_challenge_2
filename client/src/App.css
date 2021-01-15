@@ -8,7 +8,7 @@ ffffff - white
 */
 
 body {
-  background-color: black;
+  background-color: grey;
   color: c6002b;
   padding: 50px;
   font-family: Arial;
@@ -24,9 +24,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: black;
+  background: grey;
   color: white;
-
 }
 
 .nav-links{
