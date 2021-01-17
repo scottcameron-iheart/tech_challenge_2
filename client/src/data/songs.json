@@ -1,4 +1,24 @@
-[{"id": 1, "first":"ArianaGrande", "last":"Pop"},
-{"id": 2, "first":"JustinBeiber", "last":"Pop"},
-{"id": 3, "first":"24kGold", "last":"Pop"}
+[
+    {
+        "Ariana Grande":{
+            "Rank":1,
+            "Song":"Postiions"
+        },
+        "AVA MAx":{
+            "Rank":3,
+            "Song":"Postiions"
+        },
+        "24KGold":{
+            "Rank":2,
+            "Song":"Postiions"
+        },
+        "24KGo":{
+            "Rank":4,
+            "Song":"Postiions"
+        },
+        "24KGol":{
+            "Rank":5,
+            "Song":"Postiions"
+        }
+    }
 ]

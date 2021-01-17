@@ -1,18 +1,24 @@
 const express = require('express');
-const { alignPropType } = require('react-bootstrap/esm/DropdownMenu');
+const path = require('path');
 
 const app = express();
 
-app.get('/api/customers' , (req, res) => {
-    const customers = [
-        { id: 1, firstname: 'john', lastname: 'doe'},
-        { id: 2, firstname: 'chris', lastname: 'doe'},
-        { id: 3, firstname: 'john', lastname: 'chris'},
-    ];
+// Serve the static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-    res.json(customers)
+// An api endpoint that returns a short list of items
+app.get('/api/getList', (req,res) => {
+	var list = ["item1", "item2", "item3"];
+	res.json(list);
+	console.log('Sent list of items');
 });
 
-const port= 5000;
+// Handles any requests that don't match the ones above
+app.get('*', (req,res) =>{
+	res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
-app.listen(port, () => console.log('server started on port ${port}'));
+const port = process.env.PORT || 5000;
+app.listen(port);
+
+console.log('App is listening on port ' + port);

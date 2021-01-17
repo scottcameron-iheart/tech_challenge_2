@@ -6,6 +6,8 @@ Focused on human readability, then performance as a secondary factor. ✅
 
 Everything was written in JavaScript / Node.js, React.js, React Hooks, GraphQL, and AWS Serverless. ✅
 
+- Two pages
+
 ## UI Checklist
 
 - Create a client side rendered web app written with [React](https://reactjs.org/).✅
@@ -37,8 +39,3 @@ Allow the songs to be sorted when a user clicks on the header for the correspond
 ### Write Some Tests
 
 The engine is up to you, but take a look at [Jest](https://jestjs.io/), as this is our primary test runner. ✅
-
-Authentication
-Mobile Responiveness
-grpahQl
-aws serverless

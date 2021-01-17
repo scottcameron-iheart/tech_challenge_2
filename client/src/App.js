@@ -4,11 +4,11 @@ import SongsList from './components/SongsList';
 import Nav from './components/Nav';
 import { Route, BrowserRouter as Router, Switch, } from "react-router-dom";
 
-
 function App(){
 
   return (
     <Router>
+      
 
       <div className="App">
         <Nav />
