@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-  display: felx;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;

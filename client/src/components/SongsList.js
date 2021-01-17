@@ -1,15 +1,16 @@
+// importing react and using Hooks, like useState
 import React, { useState } from 'react';
 
 const songs = require('../data/songs.json');
 
-
-
+// Creating the songlist for users
 const SongsList= () => {
 
+    // Lets us show and hide the menu for the songslist to display 
     const [showText,hideText]=useState(false);
     const [add,minus] =useState(true);
 
-
+    //importing songs form json format
     const dataImport = songs[0];
 
     function renderHeaderCells() {
@@ -23,8 +24,7 @@ const SongsList= () => {
           </th>
         );
             return headerCells;        
-    });
-
+         });
         return headerCells;
     }
 
@@ -57,7 +57,6 @@ const SongsList= () => {
             }
             return results;
         });
-
         return results;
     }
 
@@ -65,11 +64,11 @@ const SongsList= () => {
     return (
         <React.Fragment>
             <p> Songs List</p>
-
             <button className="plus" onClick={() =>
-            {hideText(!showText);minus(!add)}}>{add?'ShowDetails':'HideDetails'}
+                {hideText(!showText);minus(!add)}}>{add?'Show Songs':'Hide Songs'}
             </button>{showText &&
-            <div>
+           
+           <div>
                 <p> lipsum dloream isp pur</p>
 
                 <table>
@@ -82,7 +81,7 @@ const SongsList= () => {
                 </tbody>
             </table>
             </div>
-            
+
             }
 
 

@@ -8,8 +8,6 @@ function App(){
 
   return (
     <Router>
-      
-
       <div className="App">
         <Nav />
         <Switch>
@@ -17,14 +15,14 @@ function App(){
           <Route path="/SongsList" component={SongsList} />
         </Switch>
       </div>
-    
     </Router>
   );
 }
 
-const Home = () => (
+const Home = () => (  
   <div>
     <h1> Home page </h1>
+    <p> Hello, Welcome to the iHeartMedia Code challenge 2 </p>
     
   </div>
 );
